@@ -4,6 +4,7 @@ class CreatePatternLibraryPatterns < ActiveRecord::Migration
       t.string :snippet, null: false
       t.text :usage, default: ''
       t.integer :order, default: 0
+      t.boolean :custom, default: true
 
       t.timestamps
     end

@@ -1,18 +1,12 @@
 <h1>Patterns</h1>
 
-<h1>Header One</h1>
-<h2>Header Two</h2>
-<h3>Header Three</h3>
-<h4>Header Four</h4>
-<h5>Header Five</h5>
-<h6>Header Six</h6>
-
-<p>Paragraph Text</p>
-
-<section>
-  Section Text
-  <p>Section Paragraph</p>
-
-
-<h1>Patterns#index</h1>
-<p>Find me in app/views/pattern_library/patterns/index.html.erb</p>
+<div id="pl-patterns">
+  <% @patterns.each do |pattern| %>
+    <div class="pl-pattern">
+      <pre class="pl-snippet"><%= pattern.snippet %></pre>
+      <div class="pl-snippet-styled">
+        <%= pattern.snippet.html_safe %>
+      </div>
+    </div>
+  <% end %>
+</div>
