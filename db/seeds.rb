@@ -10,8 +10,8 @@ PatternLibrary::Pattern.create order: order += 1, custom: false, snippet: '<h6>H
 PatternLibrary::Pattern.create order: order += 1, custom: false, snippet: '<p>Paragraph Text</p>'
 PatternLibrary::Pattern.create order: order += 1, custom: false, snippet: '<p><a href="#">Link text</a></p>'
 PatternLibrary::Pattern.create order: order += 1, custom: false, snippet: '<p><q>Inline Quotation</q></p>'
-PatternLibrary::Pattern.create order: order += 1, custom: false, snippet: '<p><em>Emphasized Paragraph Text</em></p>'
-PatternLibrary::Pattern.create order: order += 1, custom: false, snippet: '<p><strong>Strong Paragraph Text</strong></p>'
+PatternLibrary::Pattern.create order: order += 1, custom: false, snippet: '<p><em>Emphasized</em> Paragraph Text</p>'
+PatternLibrary::Pattern.create order: order += 1, custom: false, snippet: '<p><strong>Strong</strong> Paragraph Text</p>'
 PatternLibrary::Pattern.create order: order += 1, custom: false, snippet: <<TABLE.strip_heredoc
   <table>
     <thead>
