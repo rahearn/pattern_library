@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = PatternLibrary::VERSION
   s.authors     = ["Ryan Ahearn"]
   s.email       = ["ryan.c.ahearn@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/rahearn/pattern_library"
   s.summary     = "Pluggable pattern library."
-  s.description = "TODO: Description of PatternLibrary."
+  s.description = "Rails Engine-based CSS pattern library"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
