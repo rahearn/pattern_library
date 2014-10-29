@@ -1,3 +1,11 @@
 = PatternLibrary
 
 This project rocks and uses MIT-LICENSE.
+
+== Usage
+
+1. require gem
+1. mount engine in routes.rb: "mount PatternLibrary::Engine => "/pattern_library""
+1. copy migrations "rake pattern_library:install:migrations"
+1. load seeds: "PatternLibrary::Engine.load_seed"
+1. load css: *= require pattern_library/patterns
