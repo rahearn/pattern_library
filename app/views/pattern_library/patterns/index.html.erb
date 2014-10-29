@@ -7,6 +7,18 @@
       <div class="pl-snippet-styled">
         <%= pattern.snippet.html_safe %>
       </div>
+      <div class="pl-actions">
+        <% if pattern.custom? %>
+          <%= link_to 'Edit Pattern', edit_pattern_path(pattern) %> |
+          <%= form_for pattern, method: :delete do |f| %>
+            <%= f.submit 'Delete Pattern' %>
+          <% end %>
+        <% end %>
+      </div>
     </div>
   <% end %>
+</div>
+
+<div id="pl-actions">
+  <p><%= link_to 'Create Pattern', new_pattern_path %></p>
 </div>

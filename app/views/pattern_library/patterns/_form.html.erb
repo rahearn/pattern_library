@@ -1,0 +1,18 @@
+<div id="pl-pattern-form">
+  <%= form_for @pattern do |f| %>
+    <div class="field">
+      <%= f.label :snippet %>
+      <%= f.text_area :snippet, rows: 10, cols: 100 %>
+    </div>
+    <div class="field">
+      <%= f.label :usage, 'Usage (optional)' %>
+      <%= f.text_area :usage, rows: 10, cols: 100 %>
+    </div>
+    <%= f.hidden_field :order %>
+    <div class="actions">
+      <%= f.submit %>
+      |
+      <%= link_to 'Cancel', patterns_path %>
+    </div>
+  <% end %>
+</div>

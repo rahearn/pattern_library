@@ -3,9 +3,13 @@
   They will automatically be included in application.css.
 */
 
+#pl-patterns {
+  border-top: 1px solid #333 !important;
+}
+
 #pl-patterns > .pl-pattern {
   margin: 1em !important;
-  padding: 0 !important;
+  padding: 10px !important;
   border-bottom: 1px solid #333 !important;
 }
 
@@ -15,4 +19,19 @@
   border: 1px solid #ccc !important;
   position: relative !important;
   overflow: hidden !important;
+}
+
+#pl-patterns > .pl-pattern > .pl-actions > * {
+  display: inline-block !important;
+  margin-top: 10px !important;
+}
+
+#pl-pattern-form .field, #pl-pattern-form .actions {
+  margin: 1em !important;
+}
+
+#pl-pattern-form label {
+  width: 125px !important;
+  display: inline-block !important;
+  vertical-align: top !important;
 }
