@@ -1,5 +1,5 @@
 PatternLibrary::Engine.routes.draw do
-  resources :patterns, except: :show
+  resources :patterns
 
   root to: 'patterns#index'
 end

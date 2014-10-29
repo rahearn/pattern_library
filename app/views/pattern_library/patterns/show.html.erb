@@ -1,0 +1,13 @@
+<h1>Pattern</h1>
+
+<div id="pl-patterns">
+  <%= render @pattern %>
+  <h2>Usage</h2>
+  <div class="pl-pattern">
+    <%= @pattern.usage %>
+  </div>
+</div>
+
+<div id="pl-actions">
+  <p><%= link_to 'Back to list', patterns_path %></p>
+</div>

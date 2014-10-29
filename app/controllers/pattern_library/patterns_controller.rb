@@ -2,11 +2,14 @@ require_dependency "pattern_library/application_controller"
 
 module PatternLibrary
   class PatternsController < ApplicationController
-    before_action :find_pattern, only: [:edit, :update, :destroy]
+    before_action :find_pattern, only: [:show, :edit, :update, :destroy]
     before_action :protect_builtin, only: [:edit, :update, :destroy]
 
     def index
       @patterns = Pattern.all
+    end
+
+    def show
     end
 
     def new

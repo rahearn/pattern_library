@@ -2,20 +2,7 @@
 
 <div id="pl-patterns">
   <% @patterns.each do |pattern| %>
-    <div class="pl-pattern">
-      <pre class="pl-snippet"><%= pattern.snippet %></pre>
-      <div class="pl-snippet-styled">
-        <%= pattern.snippet.html_safe %>
-      </div>
-      <div class="pl-actions">
-        <% if pattern.custom? %>
-          <%= link_to 'Edit Pattern', edit_pattern_path(pattern) %> |
-          <%= form_for pattern, method: :delete do |f| %>
-            <%= f.submit 'Delete Pattern' %>
-          <% end %>
-        <% end %>
-      </div>
-    </div>
+    <%= render pattern %>
   <% end %>
 </div>
 
