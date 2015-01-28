@@ -19,10 +19,13 @@ h1 {
   color: red;
 }
 
-p { font-size: 2em; }
-
-p { font-size: 3em; }
-
-p { color: blue; }
 
 p.green { color: green; }
+
+p {
+  font-size: 2em;
+
+  color: blue;
+}
+
+img { border: 5px solid green; }

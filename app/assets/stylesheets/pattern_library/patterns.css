@@ -13,10 +13,18 @@
   border-bottom: 1px solid #333 !important;
 }
 
-#pl-patterns > .pl-pattern .pl-pattern-html, #pl-patterns > .pl-pattern .pl-pattern-css {
+#pl-patterns > .pl-pattern .pl-pattern-html {
   float: left;
-  width: 50%;
+  width: 60%;
   overflow: auto;
+}
+
+#pl-patterns > .pl-pattern .pl-pattern-css {
+  float: left;
+  width: 40%;
+  overflow: auto;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
 #pl-patterns > .pl-pattern .pl-snippet-styled {

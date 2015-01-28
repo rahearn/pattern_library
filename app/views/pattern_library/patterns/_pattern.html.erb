@@ -5,8 +5,8 @@
       <%= pattern.snippet.html_safe %>
     </div>
   </div>
-  <div class="pl-pattern-css">
-  </div>
+  <pre class="pl-pattern-css">
+  </pre>
   <div class="pl-actions">
     <% if pattern.usage.present? && !current_page?(pattern_path(pattern)) %>
       <%= link_to 'Usage details', pattern_path(pattern) %>
