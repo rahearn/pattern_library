@@ -1,7 +1,11 @@
 <div class="pl-pattern">
-  <pre class="pl-snippet"><%= pattern.snippet %></pre>
-  <div class="pl-snippet-styled">
-    <%= pattern.snippet.html_safe %>
+  <div class="pl-pattern-html">
+    <pre class="pl-snippet"><%= pattern.snippet %></pre>
+    <div class="pl-snippet-styled">
+      <%= pattern.snippet.html_safe %>
+    </div>
+  </div>
+  <div class="pl-pattern-css">
   </div>
   <div class="pl-actions">
     <% if pattern.usage.present? && !current_page?(pattern_path(pattern)) %>

@@ -14,3 +14,15 @@
  *= require_tree .
  *= require_self
  */
+
+h1 {
+  color: red;
+}
+
+p { font-size: 2em; }
+
+p { font-size: 3em; }
+
+p { color: blue; }
+
+p.green { color: green; }
