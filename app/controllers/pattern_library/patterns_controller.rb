@@ -7,6 +7,7 @@ module PatternLibrary
 
     def index
       @patterns = Pattern.all
+      render layout: layout
     end
 
     def show
@@ -44,6 +45,10 @@ module PatternLibrary
     end
 
     private
+
+    def layout
+      params[:layout].present? ? params[:layout] : 'application'
+    end
 
     def find_pattern
       @pattern = Pattern.find params[:id]

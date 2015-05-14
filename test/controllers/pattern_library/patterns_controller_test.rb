@@ -3,7 +3,8 @@ require 'test_helper'
 module PatternLibrary
   class PatternsControllerTest < ActionController::TestCase
     test "should get index" do
-      get :index, use_route: :pattern_library
+      @routes = PatternLibrary::Engine.routes
+      get :index
       assert_response :success
     end
   end
